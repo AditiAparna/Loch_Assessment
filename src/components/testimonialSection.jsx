@@ -30,10 +30,10 @@ const Testimonials = () => {
 
   return (
     <div className="mt-6 md:mt-2 mb-4">
-      <div className="font-normal text-[20px] md:text-[25px] mr-8 md:mr-12 text-right">
+      <div className="font-normal text-[20px] md:text-[25px] mr-8 md:mr-12 text-right opacity-85">
         Testimonials
       </div>
-      <div className="md:w-[94%] bg-white h-[1px] my-2 md:my-4"></div>
+      <div className="md:w-[94%] bg-white h-[1px] my-2 md:my-4 opacity-50"></div>
 
       <div className="flex items-end my-8">
         <img src={Loch} alt="Loch" className="mr-8 hidden md:block" />

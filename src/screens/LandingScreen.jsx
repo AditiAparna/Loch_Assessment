@@ -50,11 +50,11 @@ const LandingScreen = () => {
         <div className="w-full flex flex-col lg:flex-row items-start justify-between">
           <div className=" mr-[12px] mb-[12px] md:mr-8 md:mb-8 lg:mb-0">
             <img src={bellIcon} className="h-[28px] w-[28px] hidden md:block" />
-            <div className="font-inter pl-[12px] md:pl-0 font-medium text-[20px] leading-[20px] md:text-[31px] md:leading-[31px] my-4 text-[#F2F2F2]">
+            <div className="font-[Inter] pl-[12px] md:pl-0 font-normal opacity-95 text-[20px] leading-[20px] md:text-[31px] md:leading-[31px] my-4 text-[#F2F2F2]">
               Get notified when a <br className="hidden md:block" /> highly
               correlated <br className="hidden md:block" /> whale makes a move
             </div>
-            <div className=" pl-[12px] md:pl-0 font-medium text-[14px] leading-[14px] md:text-[16px] md:leading-[18px] text-[#F2F2F2]">
+            <div className="pl-[12px] md:pl-0 font-light text-[14px] leading-[14px] md:text-[16px] md:leading-[18px] text-[#F2F2F2] opacity-70">
               Find out when a certain whale moves{" "}
               <br className="hidden md:block" /> more than any preset amount
               on-chain or <br className="hidden md:block" />
@@ -88,10 +88,10 @@ const LandingScreen = () => {
           </div>
           <div className="mr-8 md:mr-12 ml-8 md:ml-0 mb-8 lg:mb-0 flex flex-col items-end mt-6">
             <img src={eye} className="h-[28px] w-[28px] hidden md:block" />
-            <div className="font-inter font-medium text-[20px] leading-[20px] md:text-[31px] md:leading-[31px] my-4 text-[#F2F2F2] text-left md:text-right">
+            <div className="font-inter font-normal opacity-95 text-[20px] leading-[20px] md:text-[31px] md:leading-[31px] my-4 text-[#F2F2F2] text-left md:text-right">
               Watch what the <br className="hidden md:block" /> whales are doing
             </div>
-            <div className="font-medium text-[14px] leading-[14px] md:text-[16px] md:leading-[18px] text-[#F2F2F2] text-left md:text-right">
+            <div className="font-light text-[14px] leading-[14px] md:text-[16px] md:leading-[18px] text-[#F2F2F2] text-left md:text-right opacity-70">
               All whales are not equal. Know exactly
               <br className="hidden md:block" /> what the whales impacting YOUR
               <br className="hidden md:block" /> portfolio are doing.

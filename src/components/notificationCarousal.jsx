@@ -29,7 +29,9 @@ const NotificationCarousel = () => {
   const duplicatedCards = [...cardData, ...cardData];
 
   return (
-    <div className="overflow-hidden group">
+<div className="relative overflow-hidden group">
+<div className="hidden md:block pointer-events-none absolute top-2 left-[-2px] h-[92%] w-10 z-10 bg-gradient-to-r from-black/50 to-transparent rounded" />
+  <div className="hidden md:block pointer-events-none absolute top-0 right-0 h-full w-10 z-10 bg-gradient-to-l from-black/50 to-transparent"></div>
   <div className="flex w-max gap-4 animate-carousel group-hover:[animation-play-state:paused]">
     {duplicatedCards.map((card, index) => (
       <div key={index} className="flex-shrink-0 w-[200px]">

@@ -8,11 +8,11 @@
 
   .background-quarter-circle {
     background: radial-gradient(
-        circle at 0% 80%,
-        rgba(31, 169, 17, 0.81) 17.21%,
-        #2F15D0 64.58%,
-        rgb(0, 0, 0) 100%
-      );
+        circle at 0% 100%, 
+        rgba(31, 169, 17, 0.81) 30.21%,
+         #422ad7 56.58%, 
+         rgb(0, 0, 0) 85%
+      )
   }
   
   @keyframes fade-in {

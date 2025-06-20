@@ -47,7 +47,7 @@ const LoginScreen = () => {
   return (
     <div className="w-full md:w-[44.4%] flex items-center justify-center bg-white z-10 mt-8 md:mt-0">
       <div className="max-w-md px-4">
-        <h3 className="font-normal text-[30px] md:text-[39px] text-left leading-[120%] text-[#B0B1B3] mb-4 md:mb-[35px] font-[Inter]">
+        <h3 className="font-normal text-[28px] md:text-[39px] text-left leading-[120%] text-[#B0B1B3] mb-4 md:mb-[35px] font-[Inter]">
           Sign up for <br className="hidden md:block" />
           exclusive access.
         </h3>
@@ -62,7 +62,7 @@ const LoginScreen = () => {
             }}
             onBlur={validateEmail}
             required
-            className={`w-full px-4 py-2 border ${
+            className={`w-full px-4 py-2 border opacity-60  text-[14px] ${
               error ? "border-red-500" : "border-gray-300"
             } rounded-md focus:outline-none focus:ring-2 ${
               error ? "focus:ring-red-500" : "focus:ring-black"
@@ -72,7 +72,7 @@ const LoginScreen = () => {
 
           <button
             type="submit"
-            className="w-full bg-black text-white py-2 rounded-md hover:bg-gray-900 transition my-4 md:my-[28px] cursor-pointer"
+            className="w-full bg-black text-white py-4 text-[15px] rounded-md hover:bg-gray-900 transition my-4 md:my-[28px] cursor-pointer"
           >
             Get started
           </button>
