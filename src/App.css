@@ -1,0 +1,47 @@
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .background-quarter-circle {
+    background: radial-gradient(
+        circle at 0% 80%,
+        rgba(31, 169, 17, 0.81) 17.21%,
+        #2F15D0 64.58%,
+        rgb(0, 0, 0) 100%
+      );
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out;
+  }
+  
+  @layer utilities {
+    .animate-carousel {
+      animation: carousel 25s linear infinite;
+    }
+  
+    @keyframes carousel {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  }
+  
