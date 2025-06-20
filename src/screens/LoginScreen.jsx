@@ -45,7 +45,7 @@ const LoginScreen = () => {
   }, [showToast, countdown]);
 
   return (
-    <div className="w-full md:w-[44.4%] flex items-center justify-center bg-white z-10 mt-8 md:mt-0">
+    <div className="w-full md:w-[44.4%] flex items-center h-[40%] md:min-h-screen justify-center bg-white z-10 mt-8 md:mt-0">
       <div className="max-w-md px-4">
         <h3 className="font-normal text-[28px] md:text-[39px] text-left leading-[120%] text-[#B0B1B3] mb-4 md:mb-[35px] font-[Inter]">
           Sign up for <br className="hidden md:block" />

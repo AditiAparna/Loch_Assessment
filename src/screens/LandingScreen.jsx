@@ -22,9 +22,9 @@ const LandingScreen = () => {
   const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
   return (
-    <div className="w-full md:w-[55.6%] h-[60%] md:min-h-screen background-quarter-circle text-white md:p-12 pr-0 md:pr-0 overflow-y-hidden md:overflow-y-scroll">
-      {isMobile && (
-        <div className="flex justify-center mt-4 gap-2">
+<div className={`flex flex-col ${slideIndex === 2 ? 'justify-start' : 'justify-around'} md:block w-full md:w-[55.6%] h-[60%] md:min-h-screen background-quarter-circle text-white md:p-12 pr-0 md:pr-0 overflow-y-hidden md:overflow-y-scroll`}>
+{isMobile && (
+        <div className={`flex justify-center ${slideIndex === 2 ? 'mt-[9.5%]' : 'mt-4'} gap-2`}>
           {[0, 1, 2].map((index) => (
             <button
               key={index}
@@ -83,15 +83,15 @@ const LandingScreen = () => {
           <div className="flex justify-center md:justify-start">
             <img
               src={cohorts}
-              className="rounded-[12px] h-[140px] md:h-[280px]"
+              className="rounded-[12px] h-[150px] md:h-[280px]"
             />
           </div>
-          <div className="mr-8 md:mr-12 ml-8 md:ml-0 mb-8 lg:mb-0 flex flex-col items-end mt-6">
+          <div className="mr-8 md:mr-12 ml-8 md:ml-0 mb-8 lg:mb-0 flex flex-col items-center md:items-end mt-6">
             <img src={eye} className="h-[28px] w-[28px] hidden md:block" />
-            <div className="font-inter font-normal opacity-95 text-[20px] leading-[20px] md:text-[31px] md:leading-[31px] my-4 text-[#F2F2F2] text-left md:text-right">
+            <div className="font-inter font-normal opacity-95 text-[20px] leading-[20px] md:text-[31px] md:leading-[31px] my-4 text-[#F2F2F2] text-center md:text-right">
               Watch what the <br className="hidden md:block" /> whales are doing
             </div>
-            <div className="font-light text-[14px] leading-[14px] md:text-[16px] md:leading-[18px] text-[#F2F2F2] text-left md:text-right opacity-70">
+            <div className="font-light text-[14px] leading-[14px] md:text-[16px] md:leading-[18px] text-[#F2F2F2] text-center md:text-right opacity-70">
               All whales are not equal. Know exactly
               <br className="hidden md:block" /> what the whales impacting YOUR
               <br className="hidden md:block" /> portfolio are doing.

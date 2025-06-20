@@ -35,15 +35,15 @@ const Testimonials = () => {
       </div>
       <div className="md:w-[94%] bg-white h-[1px] my-2 md:my-4 opacity-50"></div>
 
-      <div className="flex items-end my-8">
+      <div className=" relative md:static flex items-end my-8 justify-center md:justify-start">
         <img src={Loch} alt="Loch" className="mr-8 hidden md:block" />
 
         <div
           ref={scrollRef}
-          className={`flex flex-col md:flex-row gap-4 pl-2
+          className={`flex flex-col md:flex-row gap-4 pl-[12px] md:pl-2
             cursor-auto md:cursor-grab md:active:cursor-grabbing
             overflow-y-auto md:overflow-hidden
-            max-h-[225px] md:max-h-none`}
+            max-h-[300px] md:max-h-none`}
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
@@ -58,6 +58,7 @@ const Testimonials = () => {
             />
           ))}
         </div>
+        <div class=" block md:hidden pointer-events-none absolute w-[90%] h-[35px] bg-gradient-to-t from-white to-transparent z-10"></div>
       </div>
     </div>
   );
