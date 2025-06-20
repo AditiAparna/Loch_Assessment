@@ -7,9 +7,21 @@ import Testimonials from "../components/testimonialSection";
 
 const LandingScreen = () => {
   const [slideIndex, setSlideIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
-    const isMobile = window.innerWidth < 768;
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
     if (!isMobile) return;
 
     const interval = setInterval(() => {
@@ -17,14 +29,20 @@ const LandingScreen = () => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
-
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+  }, [isMobile]);
 
   return (
-<div className={`flex flex-col ${slideIndex === 2 ? 'justify-start' : 'justify-around'} md:block w-full md:w-[55.6%] h-[60%] md:min-h-screen background-quarter-circle text-white md:p-12 pr-0 md:pr-0 overflow-y-hidden md:overflow-y-scroll`}>
-{isMobile && (
-        <div className={`flex justify-center ${slideIndex === 2 ? 'mt-[9.5%]' : 'mt-4'} gap-2`}>
+    <div
+      className={`flex flex-col ${
+        slideIndex === 2 ? "justify-start" : "justify-around"
+      } md:block w-full md:w-[55.6%] h-[60%] md:min-h-screen background-quarter-circle text-white md:p-12 pr-0 md:pr-0 overflow-y-hidden md:overflow-y-scroll`}
+    >
+      {isMobile && (
+        <div
+          className={`flex justify-center ${
+            slideIndex === 2 ? "mt-[9.5%]" : "mt-4"
+          } gap-2`}
+        >
           {[0, 1, 2].map((index) => (
             <button
               key={index}

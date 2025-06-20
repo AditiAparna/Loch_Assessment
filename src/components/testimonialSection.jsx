@@ -43,7 +43,8 @@ const Testimonials = () => {
           className={`flex flex-col md:flex-row gap-4 pl-[12px] md:pl-2
             cursor-auto md:cursor-grab md:active:cursor-grabbing
             overflow-y-auto md:overflow-hidden
-            max-h-[300px] md:max-h-none`}
+            max-h-[300px] md:max-h-none bg-[linear-gradient(to_top,_white,_transparent_20px)]
+            bg-no-repeat bg-bottom bg-[length:100%_20px] md:bg-none`}
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
@@ -58,7 +59,6 @@ const Testimonials = () => {
             />
           ))}
         </div>
-        <div class=" block md:hidden pointer-events-none absolute w-[90%] h-[35px] bg-gradient-to-t from-white to-transparent z-10"></div>
       </div>
     </div>
   );
