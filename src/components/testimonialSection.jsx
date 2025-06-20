@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import TestimonialCard from "./testimonialCard";
-import Loch from "../assets/loch.svg";
+import Loch from "../assets/Loch.svg";
 import data from "../data/testimonialData.json";
 
 const Testimonials = () => {
