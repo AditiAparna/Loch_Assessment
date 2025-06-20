@@ -16,3 +16,7 @@ This project is a fully responsive React landing page for Loch, built as a take-
 ## Mobile UI Design Approach
 
 For the mobile experience, the sign-up section is prioritized at the top to maximize user engagement. The features list is presented as a carousel at the bottom, capturing attention without detracting from the primary sign-up functionality.
+
+## Deployed URL
+
+[https://loch-assessment-597v.vercel.app/](https://loch-assessment-597v.vercel.app/)
